@@ -1,0 +1,74 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Railwaymen.org - Blog</title>
+    <meta name="description" content="Railwaymen.org" />
+    <meta name="keywords" content="Railwaymen.org" />    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:title" content="Railwaymen.org - Blog" />
+    <meta property="og:description" content="Railwaymen.org" />
+    <%= stylesheet_link_tag "railwaymen_blog", :media => "all" %>
+    <%= csrf_meta_tags %>
+    <link href="/posts.atom" rel="alternate" title="ATOM" type="application/atom+xml">
+  </head>
+  
+  <body>
+    <div id="topbackground"></div>
+    <div>
+      <div id="wrapper"> 
+  <div id="header">
+          <a class="logo" href="/"><img src="/assets/logo1.png" /></a>
+          <p><a class="faceb" target="_blank" href="http://www.facebook.com/railwaymen.org"></a><a class="twit2" target="_blank" href="http://twitter.com/railwaymen_org"></a></p>
+          <div class='clear'></div>           
+        </div>  
+  <div class='menu'> 
+  </div>  
+  
+
+<div id="content1"> 
+  <%= yield %>
+</div>     
+
+
+  <div id="sidebar">   
+  <div id="pic"  class="item"> 
+    <img src="/assets/pic.png" />
+    <div class="sep3"> </div> 
+    <h3>Railwaymen.org</h3> 
+    <p>Railwaymen is a software development station focused on creating well-designed, greatly-functional and fully-tested web and mobile applications.</p> 
+  </div> 
+  
+    <div id="categories" class="item"> 
+      <h3>Categories</h3>     
+      <ul>
+    <li><a href="/category/Events">Events</a></li>
+    <li><a href="/category/Rails">Rails</a></li>
+    <li><a href="/category/Ruby">Ruby</a></li>
+      </ul>     
+    </div> 
+
+    <div id="tags" class="item"> 
+      <h3>Tags</h3>
+      <p>
+      </p>
+    </div> 
+  
+</div> 
+  <div id="footer">
+    <p id="copy">copyright railwaymen.org 2012</p>
+  </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-11060021-1");
+  pageTracker._trackPageview();
+  } catch(err) {}
+</script>
+  </body>
+</html>
