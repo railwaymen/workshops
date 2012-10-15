@@ -1,0 +1,331 @@
+/* 
+*= require bootstrap_and_overrides
+*/
+
+
+/* CSS Document */
+body{
+margin:auto;
+border:0;
+padding:0;
+background-color: #dce5e5;
+
+position:relative;
+
+font-family:Arial, Helvetica, sans-serif;
+}
+
+.contents{
+clear:both;
+margin:0 auto;
+width:940px;
+max-width:940px;
+min-width:940px;
+overflow:hidden;
+position:relative;
+text-align:left;
+}
+
+img { border:0; padding:0; margin:0;}
+a { border:none; }
+.left{float:left}
+.right{float:right;}
+.displ { margin-left: 60px; }
+.clear {clear: both;}
+
+a.under { clear: both;}
+
+#contentline1, #contentline2, #nav, #top, #footer {  margin:auto; border:0; width: 100%; position: relative;}
+
+
+#nav { background-image: url(../assets/1line_bgr.png); background-repeat:repeat-x; height:98px;}
+#top { background-image: url(../assets/2line_bgr.png); background-repeat:repeat; height:auto;}
+#contentline1{ background-color: #dce5e5; height:auto; background-image:url(../assets/3line.gif); background-repeat:repeat-x; background-position: top; }
+#contentline2{ background-color: #f7fafa; height:auto; }
+#footer { background-image: url(../assets/5line_bgr.jpg); background-repeat:repeat-x; height:146px;}
+
+
+#navcont{}
+#topcont{}
+#foocont{}
+#contl2{ padding-top: 30px; padding-bottom:30px;}
+#contl1{ padding-top: 30px; padding-bottom:30px; }
+
+#preNavigation  { height:auto; width:450px; margin: auto; padding: 3px 0 0 0; height: 60px;  float:right; }
+#preNavigation p { text-align:right; display:block; padding:0; margin:0; width:100%; height:100%; }
+
+#preNavigation p a:link, #preNavigation p a:visited { display:block; float:right; height: 57px; overflow:hidden; padding: 0; margin: 0px 0 0 20px ; text-decoration:none;}
+
+#preNavigation p a.home:link, #preNavigation p a.home:visited {  background-image:url(../assets/home.png); width: 47px; background-position: 0 0;}
+#preNavigation p a.about_us:link, #preNavigation p a.about_us:visited { background-image: url(../assets/aboutbutton.png); width: 70px; background-position: 0 0; }
+#preNavigation p a.projects:link, #preNavigation p a.projects:visited { background-image: url(../assets/projectsbutton.png); width: 66px; background-position: 0 0; }
+#preNavigation p a.blog:link, #preNavigation p a.blog:visited { background-image: url(../assets/blogbutton.png); width: 38px; background-position: 0 0;}
+#preNavigation p a.jobs:link, #preNavigation p a.jobs:visited {   background-image:url(../assets/jobsbutton.png); width: 37px; background-position: 0 0;}
+#preNavigation p a.contact:link, #preNavigation p a.contact:visited {   background-image:url(../assets/contactbutton.png); width: 60px; background-position: 0 0;} 
+
+#preNavigation p a.home:hover, #preNavigation p a.about_us:hover, #preNavigation p a.projects:hover, #preNavigation p a.blog:hover, #preNavigation p a.jobs:hover, #preNavigation p a.contact:hover {background-position: 0 -57px;}
+
+#preNavigation p a.home_active {  background-image:url(../assets/home.png); width: 47px; background-position: 0 -57px;}
+#preNavigation p a.about_us_active { background-image: url(../assets/aboutbutton.png); width: 70px; background-position: 0 -57px; }
+#preNavigation p a.projects_active { background-image: url(../assets/projectsbutton.png); width: 66px; background-position: 0 -57px; }
+#preNavigation p a.blog_active { background-image: url(../assets/blogbutton.png); width: 38px; background-position: 0 -57px;}
+#preNavigation p a.jobs_active { background-image: url(../assets/jobsbutton.png); width: 37px; background-position: 0 -57px;}
+#preNavigation p a.contact_active { background-image:url(../assets/contactbutton.png); width: 60px; background-position: 0 -57px;} 
+
+#preNavigation #language_version {position: absolute; top: 5px; right: 0; float: none; width: auto; height: auto; font-weight: bold;}
+#preNavigation #language_version a {float: none; display: inline; color: #9e2533; margin: 0; padding: 0; height: auto; width: auto; text-decoration: none;}
+
+#foocont p { font-family:Arial, Helvetica, sans-serif; font-size: 10px; font-weight:bold; color:#b4b4b4; padding: 60px 50px 0 50px;}
+
+#foocont p a:link, #foocont p a:visited { color:#cb293c; text-decoration:none; margin: 5px;}
+#foocont p a:hover, #foocont p a.active { color:#FFFFFF;}
+
+#top p { display:block; float:right; text-align:right; font-family:Arial, Helvetica, sans-serif; padding: 80px 0 0 0; color:#c9c9c9; font-size:16px; font-weight:bold; margin: 0;}
+#top p#event { margin-top: -25px; }
+
+.col1  {float: left; width:422px; margin:0; padding:0; display:inline;}
+.col2 { width:440px; padding: 0 0 0 0px; float: right; margin: 0 0 0 40px; display:inline;}
+
+ h1 { color:#202121; font-family:Arial, Helvetica, sans-serif; font-size:28px; font-weight:bold; padding: 0; margin:0 0 20px 0;}
+ h2 { color:#284040; font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:bold; padding: 0; margin:0; padding: 7px 0 0 0;}
+
+img.icon {float:left;  padding: 3px 10px 0 0;}
+
+#contentline1 .col1 p, #contentline1 .col2 p, #contentline1 ul, #contentline1 ul li  { color:#4f635d; font-size:12px; line-height:22px}
+
+#contentline1 .col1 p, #contentline1 .col2 p { padding: 0 0 0 37px; margin: 0 0 10px 0;}
+
+ #contentline1 ul  { margin: 0 0 20px 70px; padding:0;}
+
+#contentline1 .col1 p.mainline { font-size:15px;}
+#contentline1 .col2 p.mainline { font-size:15px;}
+
+#contentline1 .col2 h1 { font-size:24px;}
+
+#contentline1 .col2 .job_box {padding: 10px 10px 0 20px; background-color: #bac4c4; margin-bottom: 30px;}
+#contentline1 .col2 .job_box h2 {margin-bottom: 10px; color: #333535; font-size: 20px;}
+#contentline1 .col2 .job_box p {padding: 0; padding-right: 10px;}
+
+span.more{ background-color: #cb293c; color: white!important; padding: 5px!important; cursor: pointer; float: right; font-size: 14px; }
+.job_apply{ width: 150px; margin-left: 100px; padding-bottom: 30px; }
+
+.job_description_short{ padding-bottom: 30px; }
+
+.field_with_errors input, .field_with_errors select, .field_with_errors .chzn-container-multi .chzn-choices {
+    background: none repeat scroll 0 0 #F7CBC2!important;
+    border: 1px solid #D12F19!important;
+}
+
+ul.chzn-choices, ul.chzn-results{
+    margin: 0!important;
+}
+
+ul.chzn-results li{
+    color: black!important;
+    font-size: 10px!important;
+    line-height: 18px!important;
+}
+
+#contentline1 .workshop{
+    width: 100%;
+    color: #4F635D;
+}
+
+#contentline1 .workshop form{
+    margin-top: 30px;
+    margin-left: 130px;
+    width: 480px;
+}
+
+select.input-xlarge{
+    width: 283px;
+}
+
+.required{
+    color: #af2d40;
+    font-size: 16px;
+    float: right;
+}
+
+.chzn-container-multi .chzn-choices{
+    border: 1px solid #CCCCCC!important;
+}
+
+#show_regulation{
+    color: #4F635D;
+    font-size: 12px;
+}
+
+#contentline2 .col2 p { padding: 0 0 0 37px; color:#797979; font-size:12px; line-height:22px}
+
+#contentline2 .col2 p.title { color:#9e2533; font-weight:bold;} 
+
+#contentline2  a:link, #contentline2  a:visited  { color:#9e2533; text-decoration:none;}
+#contentline2  a:hover{ text-decoration:underline}
+
+.bold {font-weight:bold;}
+
+#contentline2 p.twitterbox { display:block; margin: 0 0 0 37px; background-color: #d8dada; background-image:url(../assets/tw1.png); background-repeat:no-repeat; background-position:top; padding: 47px 18px 23px 18px; width: 300px; height:auto; font-size:12px; color: #494a4a; line-height:18px;}
+
+#contentline2 a.small:link, #contentline2 a.small:visited { font-size: 10px;}
+
+.workshop_terms{ float: left; padding: 0px; font-size: 12px; }
+.workshop_terms .field_with_errors{ float: left; }
+.workshop_terms .field_with_errors input{ outline: 1px solid #D12F19; }
+.workshop_terms label.message { float: right; margin-left: 10px; }
+.workshop_terms .terms_label{ float: left; margin-left: 5px; font-size: 12px; }
+.workshop_terms input{ margin-top: 2px!important; }
+label.message { color: #D12F19; }
+
+.ajax-loader{ margin-left: 300px; margin-top: 50px; display: none; }
+
+.textrighttweeterlink { text-align:right; padding: 0 105px 0 0;}
+.recent {display: block; width:350px; height:40px; margin:0; padding: 160px 115px 20px 13px; background-image:url(../assets/recent_proj.jpg); background-repeat: no-repeat;  text-decoration:none; font-size: 11px; color: #f7f7f7; text-decoration:none; line-height:13px;    }
+
+
+.formstyle { padding: 15px 86px 0 37px; margin:0; }
+form { padding:0; margin:0; }
+
+.formstyle label { display:block; padding:0 0 3px 0; margin:0; font-size: 11px; color:#284040; font-weight:bolder; }
+
+.formstyle textarea, .formstyle input {  background-color:#d8dada; border: none; width: 323px; padding: 7px; margin-bottom: 7px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color: #494a4a; line-height:18px; }
+.formstyle textarea { height: 100px; overflow: hidden; display: block;}
+
+
+.buttony { float:right;  }
+.buttony input {width: 75px; height: 30px;  cursor: pointer; font-family:Arial, Helvetica, sans-serif; font-size:13px; color: #cdcccc; padding:0; margin:7px 0 0 0; font-weight: bold; line-height: 13px;}
+.buttony input.buttonstyleA { background-color: #8c8d8d; }
+.buttony input.buttonstyleB { background-color: #cb293c; }
+
+
+.thumbnails {height:auto; margin:auto; padding:0 0 0 16px;  width:auto; clear:both;}
+.thumbnails a { display:block; width: 208px; height: 140px; background-image: url(../assets/bgr_proj_small.png); background-repeat:no-repeat; padding: 3px 5px 8px 6px; float: left; margin: 15px 9px 0 0; }
+
+.browser { width:640px; height:auto; position:relative; margin:auto;}
+
+.browser .project_info{ position:absolute; top: 273px; left: 80px; margin:0; padding:0; width: 400px; height: 50px;  text-decoration:none; font-size: 12px; color: #f7f7f7; text-decoration:none; line-height:15px;}
+
+.browser .stempel { position:absolute; top: 277px; left: 490px; margin:0; padding:0; }
+
+.browser img.nava { margin: 0; padding: 0; position:absolute; top: 140px; left:0;}
+.browser img.navb { margin: 0; padding: 0; position:absolute; top: 140px; right:0;}
+
+
+.browser img.bro_picture{ padding: 0 0 0 54px; }
+.browser p { padding: 10px 60px 0 0; margin:0;}
+.browser p a:link, .browser p a:visited  { font-size: 12px; color:#9E2533; padding:0;  margin:0; text-align: right; text-decoration:none; float: right; }
+
+.browser p a:hover { text-decoration:underline; }
+
+.disabled {display: none;}
+
+.LV_invalid {
+        color:#CC0000;
+  font-size: 12px;
+        font-weight:bold;
+  display: block;
+  text-align: center;
+  }
+
+
+.LV_invalid_field,
+input.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+        border: 1px solid #CC0000;
+  }
+
+.chess_survey form fieldset{margin:10px;}
+h1{margin-left:10px;}
+.chess_survey h3{margin-left:10px;}
+.chess_survey #survey_submit{margin:10px;}
+
+
+
+#dialog-overlay {
+ 
+    /* set it to fill the whil screen */
+    width:100%; 
+    height:100%;
+     
+    /* transparency for different browsers */
+    filter:alpha(opacity=50); 
+    -moz-opacity:0.5; 
+    -khtml-opacity: 0.5; 
+    opacity: 0.5; 
+    background:#000; 
+ 
+    /* make sure it appear behind the dialog box but above everything else */
+    position:absolute; 
+    top:0; left:0; 
+    z-index:3000; 
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+ 
+.dialog-box {
+     
+    background:#dce5e5;
+    /* styling of the dialog box, i have a fixed dimension for this demo */
+    width:628px; 
+     
+    /* make sure it has the highest z-index */
+    position:absolute; 
+    z-index:5000; 
+ 
+    /* hide it by default */
+    display:none;
+}
+ 
+.dialog-box .dialog-content {
+    /* style the content */
+    text-align:left; 
+    padding:10px; 
+    margin:13px;
+    color:#666; 
+    font-family:arial;
+    font-size:11px; 
+}
+ 
+a.button {
+    /* styles for button */
+    margin:10px auto 0 auto;
+    text-align:center;
+    display: block;
+    width:50px;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+     
+    /* button color */
+    background-color: #e33100;
+     
+    /* text shaow */
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer;
+     
+}
+ 
+a.button:hover {
+    background-color: #c33100;  
+}
+ 
+/* extra styling */
+.dialog-box .dialog-content p {
+    font-weight:700; margin:0;
+}
+ 
+.dialog-box .dialog-content ul {
+    margin:10px 0 10px 20px; 
+    padding:0; 
+    height:50px;
+}

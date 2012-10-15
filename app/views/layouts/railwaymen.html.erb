@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Railwaymen.org - About Us</title>
+    <meta name="description" content="We are enthusiastic and open-minded individuals fascinated with software web development. Committed to working in fast moving environment, we love challenges" />
+    <meta name="keywords" content="about us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="dialog-overlay"></div>
+    <div id="nav">
+      <div id="navcont" class="contents">
+
+        <a href="/home" class="left"><img alt="Logo" src="/assets/logo.png" /></a> 
+        <div id="preNavigation">                    
+          <p>
+            <a href="/contact" class="contact"></a>
+            <a href="http://blog.railwaymen.org" class="blog" target="_blank"></a>
+            <a href="/about_us" class="about_us"></a>
+            <a href="/home" class="home"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <%= yield %>
+
+
+    
+    <div id="footer">
+      <div id="foocont" class="contents">
+        <p class="left">
+          <a href="/home" class="notactive">home</a>
+          <a href="/about_us" class="notactive">about us</a>
+          <a href="http://blog.railwaymen.org" class="notactive" target="_blank">blog</a>
+          <a href="/contact" class="notactive">contact</a>  </p>
+        <p class="right">copyright <a href="http://railwaymen.org/">railwaymen.org</a> 2009-2012</p>
+      </div>
+    </div>
+  </body>
+</html>
