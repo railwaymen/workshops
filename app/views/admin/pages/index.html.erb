@@ -1,0 +1,19 @@
+<% title "Admin/Pages" %>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>Slug</th>
+  </tr>
+  <% for page in @pages %>
+    <tr>
+      <td><%= page.content %></td>
+      <td><%= page.slug %></td>
+      <td><%= link_to "Show", [:admin, page] %></td>
+      <td><%= link_to "Edit", edit_admin_page_path(page) %></td>
+      <td><%= link_to "Destroy", [:admin, page], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Admin/Page", new_admin_page_path %></p>
