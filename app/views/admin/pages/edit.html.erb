@@ -1,8 +1,6 @@
-<% title "Edit Admin/Page" %>
-
-<%= render 'form' %>
-
-<p>
-  <%= link_to "Show", [:admin, @page] %> |
-  <%= link_to "View All", admin_pages_path %>
-</p>
+<%- model_class = Page -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human,
+                                   :default => "Edit #{model_class.model_name.human}") %></h1>
+</div>
+<%= render :partial => 'form' %>
