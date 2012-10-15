@@ -1,4 +1,6 @@
 Workshops::Application.routes.draw do
+  namespace(:admin){ resources :posts }
+
   namespace(:admin){ resources :pages }
 
   # The priority is based upon order of creation:

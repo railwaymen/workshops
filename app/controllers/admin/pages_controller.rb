@@ -1,6 +1,4 @@
-class Admin::PagesController < ApplicationController
-  layout 'admin'
-  
+class Admin::PagesController < Admin::BaseController
   def index
     @pages = Page.all
   end
