@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'pg'
 gem 'seed-fu'
 gem 'nifty-generators'
+gem 'mocha', :group => :test
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -38,3 +39,4 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
