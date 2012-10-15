@@ -1,2 +1,4 @@
-<p><%= link_to post.title, post %></p>
-<p><%=raw post.content %></p>
+<div class='post'>
+  <h2><%= link_to post.title, post %></h2>
+  <div class='postcontent'><%=raw post.content %></div>
+</div>
