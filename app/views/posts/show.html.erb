@@ -2,3 +2,13 @@
   <h2><%= @post.title %></h2>
   <div class='postcontent'><%=raw @post.content %></div>
 </div>
+
+
+<div class='post'>
+  <%= form_for @comment, :url => post_comments_url(@post.id) do |f| %>
+    <%= f.text_area :content %>
+    <div class='form-actions'>
+      <%= f.button 'Comment' %>
+    </div>
+  <% end %>
+</div>

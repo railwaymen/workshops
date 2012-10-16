@@ -11,6 +11,7 @@ gem 'seed-fu'
 gem 'nifty-generators'
 gem 'mocha', :group => :test
 gem 'twitter-bootstrap-rails'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.

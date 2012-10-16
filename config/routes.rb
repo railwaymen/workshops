@@ -1,4 +1,6 @@
 Workshops::Application.routes.draw do
+  devise_for :users
+
   namespace(:admin){ resources :posts }
 
   namespace(:admin){ resources :pages }
@@ -60,7 +62,9 @@ Workshops::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 
-  resources :posts, :path => '', :constraints => { :subdomain => /.+/ }
+  resources :posts, :path => '', :constraints => { :subdomain => /.+/ } do
+    resources :comments
+  end
 
   match '*slug', :to => 'pages#show'
   root :to => 'pages#show'
