@@ -3,12 +3,14 @@
   <div class='postcontent'><%=raw @post.content %></div>
 </div>
 
+<%= render @comments %>
 
 <div class='post'>
   <%= form_for @comment, :url => post_comments_url(@post.id) do |f| %>
+    <%= f.hidden_field :post_id %>
     <%= f.text_area :content %>
     <div class='form-actions'>
-      <%= f.button 'Comment' %>
+      <%= f.button 'Comment', :class => 'btn' %>
     </div>
   <% end %>
 </div>
