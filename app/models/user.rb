@@ -14,4 +14,8 @@ class User < ActiveRecord::Base
   def to_s
     email
   end
+
+  def password_required?
+    facebook_uid.nil?
+  end
 end

@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require facebook
 //= require twitter/bootstrap
 //= require_tree .

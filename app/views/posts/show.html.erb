@@ -5,12 +5,18 @@
 
 <%= render @comments %>
 
-<div class='post'>
-  <%= form_for @comment, :url => post_comments_url(@post.id) do |f| %>
-    <%= f.hidden_field :post_id %>
-    <%= f.text_area :content %>
-    <div class='form-actions'>
-      <%= f.button 'Comment', :class => 'btn' %>
-    </div>
-  <% end %>
-</div>
+<% if user_signed_in? %>
+  <div class='post'>
+    <%= form_for @comment, :url => post_comments_url(@post.id) do |f| %>
+      <%= f.hidden_field :post_id %>
+      <%= f.text_area :content %>
+      <div class='form-actions'>
+        <%= f.button 'Comment', :class => 'btn' %>
+      </div>
+    <% end %>
+  </div>
+<% else %>
+  <div class='post'>
+    <%= link_to "Sign in with Facebook", '#', :id => 'facebook-login' %>
+  </div>
+<% end %>
