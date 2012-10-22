@@ -1,8 +1,9 @@
 $ ->
-  $('#facebook-login').on 'click', (e) ->
+  facebookCallback = (response) ->
+    if response.authResponse
+      window.location = '/auth/facebook'
+  
+  $('#facebook-login').click (e) ->
     e.preventDefault()
 
-    FB.login ( (response) ->
-      if response.authResponse
-        window.location = '/auth/facebook'
-    ), scope: 'email'
+    FB.login(facebookCallback, scope: 'email')
