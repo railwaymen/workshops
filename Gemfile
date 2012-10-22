@@ -13,7 +13,6 @@ gem 'mocha', :group => :test
 gem 'twitter-bootstrap-rails'
 gem 'devise'
 gem 'omniauth-facebook'
-gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
