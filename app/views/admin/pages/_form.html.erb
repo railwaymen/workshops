@@ -5,10 +5,27 @@
       <%= f.text_area :content, :class => 'text_area' %>
     </div>
   </div>
+
   <div class="control-group">
     <%= f.label :slug, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :slug, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <% if @page.image.exists? %>
+    <div class='control-group'>
+      <%= f.label :nil, 'Image', :class => 'control-label' %>
+      <div class='controls'>
+        <%= image_tag @page.image %>
+      </div>
+    </div> 
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :image, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.file_field :image, :class => 'text_field' %>
     </div>
   </div>
 
